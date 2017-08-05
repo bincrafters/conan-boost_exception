@@ -2,7 +2,7 @@
 
 [Conan.io](https://conan.io) package for [Boost.Exception](https://github.com/Boostorg/Exception) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/conan-public/Boost.Exception%3Abincrafters).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/Boost.Exception%3Abincrafters).
 
 ## For Users: Use this package
 
