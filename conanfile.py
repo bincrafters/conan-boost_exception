@@ -8,7 +8,8 @@ class BoostExceptionConan(ConanFile):
     name = "boost_exception"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_exception"
-    
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["exception"]
     is_header_only = False
 
