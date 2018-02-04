@@ -6,7 +6,7 @@ from conans import ConanFile, tools
 
 class BoostExceptionConan(ConanFile):
     name = "boost_exception"
-    version = "1.66.0"
+    version = "1.65.1"
     url = "https://github.com/bincrafters/conan-boost_exception"
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
@@ -17,14 +17,14 @@ class BoostExceptionConan(ConanFile):
     default_options = "shared=False"
     
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_assert/1.66.0@bincrafters/testing",
-        "boost_config/1.66.0@bincrafters/testing",
-        "boost_core/1.66.0@bincrafters/testing",
-        "boost_smart_ptr/1.66.0@bincrafters/testing",
-        "boost_throw_exception/1.66.0@bincrafters/testing",
-        "boost_tuple/1.66.0@bincrafters/testing",
-        "boost_type_traits/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.65.1@bincrafters/testing",
+        "boost_assert/1.65.1@bincrafters/testing",
+        "boost_config/1.65.1@bincrafters/testing",
+        "boost_core/1.65.1@bincrafters/testing",
+        "boost_smart_ptr/1.65.1@bincrafters/testing",
+        "boost_throw_exception/1.65.1@bincrafters/testing",
+        "boost_tuple/1.65.1@bincrafters/testing",
+        "boost_type_traits/1.65.1@bincrafters/testing"
     )
 
     def package_id_additional(self):
@@ -40,7 +40,7 @@ class BoostExceptionConan(ConanFile):
     short_paths = True
     generators = "boost"
     settings = "os", "arch", "compiler", "build_type"
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.65.1@bincrafters/testing"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
